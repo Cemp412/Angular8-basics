@@ -1,0 +1,41 @@
+<p>ngif works!</p>
+<p>ngif works!</p>
+<div *ngIf="department === 'computer'">
+    <h1 class="text-center text-white bg-success p-3"> 
+
+
+        sir you are leran in computer depart...
+
+
+
+
+    </h1>
+
+</div>
+<div *ngIf="department === 'computer' then correct else wrong">
+    
+
+</div>
+
+<ng-template #correct>
+    <h1 class="text-center text-white bg-success p-3"> 
+
+
+        sir you are leran in computer depart...
+
+
+
+
+    </h1>
+</ng-template>
+<ng-template #wrong>
+    <h1 class="text-center text-white bg-danger p-3"> 
+
+
+        sir you are not leran in computer depart...
+
+
+
+
+    </h1>
+</ng-template>
